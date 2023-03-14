@@ -199,14 +199,12 @@ https://www.iconfinder.com/icons/172473/globe_global_internet_icon */
 	color: rgba(0, 0, 0, 0.8) !important;
 }
 
-@media screen and (width <= 900px) {
+@media screen and (max-width: 900px) {
 	.name {
 		margin-left: 4%;
 		width: 100%;
 	}
-	.grid-2-3 {
-		grid-template-columns: repeat(1, 1fr);
-	}
+	
 }
 
 .code-svg {
@@ -337,7 +335,6 @@ https://www.iconfinder.com/icons/172473/globe_global_internet_icon */
 
 .grid-2-3 {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	grid-gap: 10px;
 	place-content: center;
@@ -346,6 +343,12 @@ https://www.iconfinder.com/icons/172473/globe_global_internet_icon */
 
 .grid-2-3-child {
 	min-width: 85%;
+}
+
+@media (min-width: 900px) {
+  .grid-2-3 {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 .contact-desc {
