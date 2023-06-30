@@ -125,11 +125,29 @@ https://www.iconfinder.com/icons/172473/globe_global_internet_icon */
 	filter: invert(54%) sepia(46%) saturate(1242%) hue-rotate(298deg)
 		brightness(106%) contrast(101%);
 }
+.greetings-intro-wrapper{
+	text-align: left;
+}
 
-.introduction,
+@media screen and (max-width: 900px) {
+	.greetings-intro-wrapper{
+		text-align: center;
+	}
+}
+
 .greeting {
-	font-size: clamp(2rem, 3vw, 3.5rem);
+	font-size: clamp(2.75rem, 4vw, 4rem);
 	line-height: 1.5;
+}
+
+.introduction{
+	font-size: clamp(1.75rem, 1.5vw, 2.5rem);
+	line-height: 1.5;
+}
+.intro-span{
+	font-weight: 700px;
+	color: hotpink;
+	text-decoration: wavy;
 }
 
 .intro-text {
@@ -140,6 +158,54 @@ https://www.iconfinder.com/icons/172473/globe_global_internet_icon */
 	gap: 1rem;
 	transition: all 750ms ease-in-out;
 	border-radius: 0.75rem;
+}
+
+/* for fancy buttons:  */
+.buttons {
+	margin-block: 2%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-hover a{
+	color: #fff;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-dark {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+.btn-hover.color-blue {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
 .intro-text:hover {
@@ -221,7 +287,7 @@ https://www.iconfinder.com/icons/172473/globe_global_internet_icon */
 
 .my-image-wrapper {
 	background-image: url(../images/Pictures/St_profile.jpg);
-	background-position: center;
+	background-position: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 17.5vw;
